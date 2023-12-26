@@ -71,7 +71,7 @@ public class Blue_Leg : MonoBehaviour
         }
         if (compteur == sat)
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/saturation");
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/saturation");
         }
 
 

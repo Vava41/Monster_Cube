@@ -15,7 +15,7 @@ public class Green_Leg : MonoBehaviour
 
     void Update()
     {
-        // Vérifie si la barre d'espace est enfoncée
+        // Vï¿½rifie si la barre d'espace est enfoncï¿½e
         if (Input.GetKey(KeyCode.Space))
         {
             // Redimensionne le cube sur l'axe Y
@@ -70,7 +70,7 @@ public class Green_Leg : MonoBehaviour
         }
         if (compteur == sat)
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/saturation");
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/saturation");
         }
 
 
