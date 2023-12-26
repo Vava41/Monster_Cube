@@ -21,7 +21,7 @@ public class Green_Leg : MonoBehaviour
             // Redimensionne le cube sur l'axe Y
             ScaleOnZ();
             //compteur += 1;
-            fmod_stretch();
+            //fmod_stretch();
         }
 
 
@@ -30,20 +30,24 @@ public class Green_Leg : MonoBehaviour
             // Redimensionne le cube sur l'axe Y
             ScaleOnZ();
             //compteur += 1;
-            fmod_stretch();
+            //fmod_stretch();
         }
         if (Input.GetKey(KeyCode.O))
         {
             compteur = 0;
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
+
             // Retour taille initiale
             transform.localScale = new Vector3(0.20f, 0.20f, 0.30f);
             compteur = 0;
         }
+
+
         if (Input.GetKeyDown(KeyCode.Joystick1Button3))
         {
             compteur = 0;
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
+
             // Retour taille initiale
             transform.localScale = new Vector3(0.20f, 0.20f, 0.30f);
         }
@@ -52,10 +56,10 @@ public class Green_Leg : MonoBehaviour
     void ScaleOnZ()
     {
         // Redimensionne le cube uniquement sur l'axe Z
-        transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z + 1 * Time.deltaTime);
-        if (transform.localScale.x >= limite)
+        
+        if (transform.localScale.z < limite)
         {
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, limite);
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z + 1 * Time.deltaTime);
         }
 
 
@@ -66,8 +70,8 @@ public class Green_Leg : MonoBehaviour
             compteur = 0;
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
             transform.localScale = new Vector3(0.20f, 0.20f, 0.30f);
-
         }
+
         if (compteur == sat)
         {
             //FMODUnity.RuntimeManager.PlayOneShot("event:/saturation");

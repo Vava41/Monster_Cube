@@ -37,13 +37,17 @@ public class Red_Leg : MonoBehaviour
         {
             compteur = 0;
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
+
             // Retour taille initiale
             transform.localScale = new Vector3(0.30f, 0.20f, 0.20f);
         }
+
+
         if (Input.GetKeyDown(KeyCode.Joystick1Button3))
         {
             compteur = 0;
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
+
             // Retour taille initiale
             transform.localScale = new Vector3(0.30f, 0.20f, 0.20f);
         }
