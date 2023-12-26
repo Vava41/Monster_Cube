@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0e5e1860-689f-458a-939c-a8619bc0e7b0}">
+		<property name="assetPath">
+			<value>impacts/impact_boite_5.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.35870748299319727</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{acc4ef29-20d0-41db-b90c-5c5ff5e537a7}</destination>
+		</relationship>
+	</object>
+</objects>

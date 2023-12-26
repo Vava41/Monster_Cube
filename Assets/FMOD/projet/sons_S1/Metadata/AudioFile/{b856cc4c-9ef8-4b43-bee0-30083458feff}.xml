@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b856cc4c-9ef8-4b43-bee0-30083458feff}">
+		<property name="assetPath">
+			<value>foley/Plastic, Friction, Creak, Bend, Stress 01 SND18790 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.34792708333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{acc4ef29-20d0-41db-b90c-5c5ff5e537a7}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{bc3d8a17-d11b-4d6c-9269-b0f3cbd2c7fd}">
+		<property name="assetPath">
+			<value>foley/saturation_1.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.1759999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{acc4ef29-20d0-41db-b90c-5c5ff5e537a7}</destination>
+		</relationship>
+	</object>
+</objects>
