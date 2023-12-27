@@ -1529,7 +1529,7 @@ MonoBehaviour:
   G2: {fileID: 1377358070}
   G3: {fileID: 1627353257}
   rb: {fileID: 1649616853}
-  speed: 5
+  speed: 15
   speedJoystickH: 2
   speedJoystickV: 2
   rotationSpeed: 300
@@ -2144,11 +2144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 725846098387904013, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -3e-45
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 725846098387904013, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1e-45
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2749634573626666895, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_Follow
