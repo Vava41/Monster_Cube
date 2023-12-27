@@ -131,7 +131,7 @@ public class CubeControl : MonoBehaviour
             float verticalInput = Input.GetAxis("Vertical");
 
             // D�finir la direction de la propulsion en fonction des axes
-            Vector3 propulsionDirection = new Vector3(horizontalInput, 0f, verticalInput);
+            Vector3 propulsionDirection = (cameraForward * verticalInput) + (cameraRight * horizontalInput);
 
             // Appliquer la force si la manette est utilis�e
             if (propulsionDirection != Vector3.zero)
