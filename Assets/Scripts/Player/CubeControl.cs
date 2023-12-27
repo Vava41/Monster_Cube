@@ -121,14 +121,14 @@ public class CubeControl : MonoBehaviour
 
         void HandleInput()
         {
-            // Récupérer les axes de déplacement de la manette
+            // Rï¿½cupï¿½rer les axes de dï¿½placement de la manette
             float horizontalInput = Input.GetAxis("Horizontal");
             float verticalInput = Input.GetAxis("Vertical");
 
-            // Définir la direction de la propulsion en fonction des axes
+            // Dï¿½finir la direction de la propulsion en fonction des axes
             Vector3 propulsionDirection = new Vector3(horizontalInput, 0f, verticalInput);
 
-            // Appliquer la force si la manette est utilisée
+            // Appliquer la force si la manette est utilisï¿½e
             if (propulsionDirection != Vector3.zero)
             {
                 rb.AddForce(propulsionDirection.normalized * speed);
