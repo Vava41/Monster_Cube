@@ -15,6 +15,7 @@ public class CubeControl : MonoBehaviour
     float _horizontalInput;
     float _verticalInput;
     public bool grounded = true;
+    public Camera playerCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -29,12 +30,16 @@ public class CubeControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 cameraForward = Vector3.Scale(playerCamera.transform.forward, new Vector3(1, 0, 1)).normalized;
+        Vector3 cameraRight = Vector3.Scale(playerCamera.transform.right, new Vector3(1, 0, 1)).normalized;
+        Vector3 cameraLeft = Vector3.Scale(-playerCamera.transform.right, new Vector3(1, 0, 1)).normalized;
+        Vector3 cameraBack = Vector3.Scale(-playerCamera.transform.forward, new Vector3(1, 0, 1)).normalized;
         if (grounded== true || G1== true || G2 == true || G3 == true)
         {
             HandleInput();
 
 
-            Vector3 propulsionf = Vector3.forward;
+            Vector3 propulsionf = cameraForward;
 
             if (Input.GetKey(KeyCode.W))
             {
@@ -42,7 +47,7 @@ public class CubeControl : MonoBehaviour
             }
 
 
-            Vector3 propulsionb = Vector3.back;
+            Vector3 propulsionb = cameraBack;
 
             if (Input.GetKey(KeyCode.S))
             {
@@ -50,7 +55,7 @@ public class CubeControl : MonoBehaviour
             }
 
 
-            Vector3 propulsionl = Vector3.left;
+            Vector3 propulsionl = cameraLeft;
 
             if (Input.GetKey(KeyCode.A))
             {
@@ -58,7 +63,7 @@ public class CubeControl : MonoBehaviour
             }
 
 
-            Vector3 propulsionr = Vector3.right;
+            Vector3 propulsionr = cameraRight;
 
             if (Input.GetKey(KeyCode.D))
             {
