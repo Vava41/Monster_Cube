@@ -6,7 +6,7 @@ public class Red_Leg : MonoBehaviour
 
 
 
-    public int limite = 10;
+    public float limite = 10f;
     public int sat = 8;
     private int compteur = 0;
 
@@ -39,7 +39,7 @@ public class Red_Leg : MonoBehaviour
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
 
             // Retour taille initiale
-            transform.localScale = new Vector3(0.30f, 0.20f, 0.20f);
+            transform.localScale = new Vector3(0.009982302f, 0.1953554f, 0.16f);
         }
 
 
@@ -49,7 +49,7 @@ public class Red_Leg : MonoBehaviour
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
 
             // Retour taille initiale
-            transform.localScale = new Vector3(0.30f, 0.20f, 0.20f);
+            transform.localScale = new Vector3(0.009982302f, 0.19535540f, 0.16f);
         }
     }
 
@@ -58,7 +58,7 @@ public class Red_Leg : MonoBehaviour
         // Redimensionne le cube uniquement sur l'axe X
         if (transform.localScale.x < limite)
         {
-            transform.localScale = new Vector3(transform.localScale.x + 1 * Time.deltaTime, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x + 0.1f * Time.deltaTime, transform.localScale.y, transform.localScale.z);
         }
 
 
