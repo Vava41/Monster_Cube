@@ -10,7 +10,8 @@ public class Red_Leg : MonoBehaviour
     public int sat = 8;
     private int compteur = 0;
 
-    [SerializeField] public bool G2;
+    [SerializeField] 
+    public bool G2;
     public Transform _parent;
 
 
@@ -58,7 +59,7 @@ public class Red_Leg : MonoBehaviour
         // Redimensionne le cube uniquement sur l'axe X
         if (transform.localScale.x < limite)
         {
-            transform.localScale = new Vector3(transform.localScale.x + 0.1f * Time.deltaTime, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x + 1f * Time.deltaTime, transform.localScale.y, transform.localScale.z);
         }
 
 
