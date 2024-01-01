@@ -16,7 +16,7 @@ public class Red_Leg : MonoBehaviour
 
     void Update()
     {
-        // Vérifie si la barre d'espace est enfoncée
+        // Vï¿½rifie si la barre d'espace est enfoncï¿½e
         if (Input.GetKey(KeyCode.E))
         {
             // Redimensionne le cube sur l'axe X
@@ -35,21 +35,13 @@ public class Red_Leg : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.O))
         {
-            compteur = 0;
-            transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
-
-            // Retour taille initiale
-            transform.localScale = new Vector3(0.009982302f, 0.1953554f, 0.16f);
+            Reset();
         }
 
 
         if (Input.GetKeyDown(KeyCode.Joystick1Button3))
         {
-            compteur = 0;
-            transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
-
-            // Retour taille initiale
-            transform.localScale = new Vector3(0.009982302f, 0.19535540f, 0.16f);
+            Reset();
         }
     }
 
@@ -58,7 +50,7 @@ public class Red_Leg : MonoBehaviour
         // Redimensionne le cube uniquement sur l'axe X
         if (transform.localScale.x < limite)
         {
-            transform.localScale = new Vector3(transform.localScale.x + 0.1f * Time.deltaTime, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x + 1f * Time.deltaTime, transform.localScale.y, transform.localScale.z);
         }
 
 
@@ -93,6 +85,14 @@ public class Red_Leg : MonoBehaviour
     {
         //FMODUnity.RuntimeManager.PlayOneShot("event:/boing");
         G2 = true;
+    }
+    void Reset()
+    {
+        compteur = 0;
+            transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
+
+            // Retour taille initiale
+            transform.localScale = new Vector3(0.009982302f, 0.1953554f, 0.16f);
     }
 
 }

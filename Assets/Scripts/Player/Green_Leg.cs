@@ -34,22 +34,13 @@ public class Green_Leg : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.O))
         {
-            compteur = 0;
-            transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
-
-            // Retour taille initiale
-            transform.localScale = new Vector3(0.20f, 0.20f, 0.30f);
-            compteur = 0;
+            Reset();
         }
 
 
         if (Input.GetKeyDown(KeyCode.Joystick1Button3))
         {
-            compteur = 0;
-            transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
-
-            // Retour taille initiale
-            transform.localScale = new Vector3(0.20f, 0.20f, 0.30f);
+            Reset();
         }
     }
 
@@ -93,6 +84,14 @@ public class Green_Leg : MonoBehaviour
     {
         //FMODUnity.RuntimeManager.PlayOneShot("event:/boing");
         G1 = true;
+    }
+    void Reset()
+    {
+        compteur = 0;
+            transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
+
+            // Retour taille initiale
+            transform.localScale = new Vector3(0.009982302f, 0.1953554f, 0.16f);
     }
 }
 
