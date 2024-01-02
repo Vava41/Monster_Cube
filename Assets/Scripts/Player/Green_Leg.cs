@@ -91,7 +91,7 @@ public class Green_Leg : MonoBehaviour
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
 
             // Retour taille initiale
-            transform.localScale = new Vector3(0.009982302f, 0.1953554f, 0.16f);
+            transform.localScale = new Vector3(0.20f, 0.20f, 0.30f);
     }
 }
 
