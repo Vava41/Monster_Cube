@@ -7,7 +7,7 @@ public class Green_Leg : MonoBehaviour
 
 
 
-    public int limite = 10;
+    public float limite = 10;
     public int sat = 8;
     private int compteur = 0;
 
@@ -49,7 +49,7 @@ public class Green_Leg : MonoBehaviour
     {
         // Redimensionne le cube uniquement sur l'axe Z
         
-        if (transform.localScale.z < limite)
+        if (transform.localScale.x < limite)
         {
             transform.localScale = new Vector3(transform.localScale.x + speed * Time.deltaTime, transform.localScale.y, transform.localScale.z);
         }
@@ -92,7 +92,7 @@ public class Green_Leg : MonoBehaviour
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
 
             // Retour taille initiale
-            transform.localScale = new Vector3(0.20f, 0.20f, 0.30f);
+            transform.localScale = new Vector3(1f, 1f, 1f);
     }
 }
 

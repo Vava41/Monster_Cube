@@ -11,8 +11,7 @@ public class Red_Leg : MonoBehaviour
     public int sat = 8;
     private int compteur = 0;
 
-    [SerializeField] 
-    public bool G2;
+    [SerializeField] public bool G2;
     public Transform _parent;
 
 
