@@ -354,6 +354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1203,6 +1207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Membre
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e3208dce814f1479b1a21a6b90538d, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1361,10 +1369,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1958230380}
   m_SourcePrefab: {fileID: 100100000, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
 --- !u!1 &483985876
 GameObject:
@@ -1673,11 +1688,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+--- !u!1 &525048482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+  m_PrefabInstance: {fileID: 438108051}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &539050772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1733,6 +1757,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7e3208dce814f1479b1a21a6b90538d, type: 3}
       propertyPath: m_Name
       value: Membre
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e3208dce814f1479b1a21a6b90538d, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2846,6 +2874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Membre
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7e3208dce814f1479b1a21a6b90538d, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -3309,6 +3341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3685,6 +3721,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
       propertyPath: m_Name
       value: Hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4160,10 +4200,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1876078260}
   m_SourcePrefab: {fileID: 100100000, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
 --- !u!1001 &1664759514
 PrefabInstance:
@@ -4932,6 +4979,32 @@ Transform:
   - {fileID: 1762619457}
   m_Father: {fileID: 483985877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1876078257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
+  m_PrefabInstance: {fileID: 1640392950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1876078260
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876078257}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.8378003, y: 1.2022153, z: 1.1820047}
+  m_Center: {x: -0.7376182, y: 0.13564396, z: 0.3651445}
 --- !u!1001 &1880095543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5255,6 +5328,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 340e59aa6f9ec2444be0ddf22bc2024e, type: 3}
   m_PrefabInstance: {fileID: 438108051}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1958230380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525048482}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.8378003, y: 1.2022153, z: 1.1820048}
+  m_Center: {x: -0.7376183, y: 0.13564396, z: 0.36514547}
 --- !u!1001 &1961492297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5731,11 +5825,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 82451520966002863, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016462865
+      value: 0.000000016462865
       objectReference: {fileID: 0}
     - target: {fileID: 82451520966002863, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000005003348
+      value: -0.000000005003348
       objectReference: {fileID: 0}
     - target: {fileID: 570224654733170359, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_Name
@@ -5803,11 +5897,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 725846098387904013, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1e-45
+      value: -3e-45
       objectReference: {fileID: 0}
     - target: {fileID: 725846098387904013, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 2749634573626666895, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_Follow
@@ -5836,6 +5930,10 @@ PrefabInstance:
     - target: {fileID: 3088306995922421170, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.000000005301974
+      objectReference: {fileID: 0}
+    - target: {fileID: 5731506501892067625, guid: f9130491f82337342a049d2419db6a2e, type: 3}
+      propertyPath: m_IgnoreTag
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
