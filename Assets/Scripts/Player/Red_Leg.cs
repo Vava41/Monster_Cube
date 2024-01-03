@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Red_Leg : MonoBehaviour
 {
-    public float scaleFactor = 2.0f; // Facteur d'agrandissement sur l'axe Y
+    //public float scaleFactor = 2.0f; // Facteur d'agrandissement sur l'axe Y
+    public float speed = 5f;
 
 
 
@@ -51,7 +52,7 @@ public class Red_Leg : MonoBehaviour
         // Redimensionne le cube uniquement sur l'axe X
         if (transform.localScale.x < limite)
         {
-            transform.localScale = new Vector3(transform.localScale.x + 1f * Time.deltaTime, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x + speed * Time.deltaTime, transform.localScale.y, transform.localScale.z);
         }
 
 
@@ -93,7 +94,7 @@ public class Red_Leg : MonoBehaviour
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
 
             // Retour taille initiale
-            transform.localScale = new Vector3(0.30f, 0.20f, 0.20f);
+            transform.localScale = new Vector3(1f, 1f, 1f);
     }
 
 }

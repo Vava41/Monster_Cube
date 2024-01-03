@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Blue_Leg : MonoBehaviour
 {
-    public float scaleFactor = 1.5f; // Facteur d'agrandissement sur l'axe Y
+    //public float scaleFactor = 1.5f; // Facteur d'agrandissement sur l'axe Y
+    public float speed = 5f;
 
 
 
@@ -53,19 +54,19 @@ public class Blue_Leg : MonoBehaviour
         // Redimensionne le cube uniquement sur l'axe Y
         if (transform.localScale.y < limite)
         {
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + 1 * Time.deltaTime, transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x + speed * Time.deltaTime, transform.localScale.y,  transform.localScale.z);
         }
 
 
 
-        //Limite
-        if (compteur == limite)
-        {
-            compteur = 0;
-            transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
-            transform.localScale = new Vector3(0.20f, 0.30f, 0.20f);
+        ////Limite
+        //if (compteur == limite)
+        //{
+        //    compteur = 0;
+        //    transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
+        //    transform.localScale = new Vector3(0.20f, 0.30f, 0.20f);
 
-        }
+        //}
         if (compteur == sat)
         {
             //FMODUnity.RuntimeManager.PlayOneShot("event:/saturation");
@@ -94,7 +95,7 @@ public class Blue_Leg : MonoBehaviour
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
 
             // Retour taille initiale
-            transform.localScale = new Vector3(0.20f, 0.30f, 0.20f);
+            transform.localScale = new Vector3(1f, 21.9793f, 1f);
     }
 
 }

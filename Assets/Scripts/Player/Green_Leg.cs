@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Green_Leg : MonoBehaviour
 {
-    public float scaleFactor = 2.0f; // Facteur d'agrandissement sur l'axe Y
+    //public float scaleFactor = 2.0f; // Facteur d'agrandissement sur l'axe Y
+    public float speed = 5f;
 
 
 
@@ -50,18 +51,18 @@ public class Green_Leg : MonoBehaviour
         
         if (transform.localScale.z < limite)
         {
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z + 1 * Time.deltaTime);
+            transform.localScale = new Vector3(transform.localScale.x + speed * Time.deltaTime, transform.localScale.y, transform.localScale.z);
         }
 
 
 
-        //Limite
-        if (compteur == limite)
-        {
-            compteur = 0;
-            transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
-            transform.localScale = new Vector3(0.20f, 0.20f, 0.30f);
-        }
+        ////Limite
+        //if (compteur == limite)
+        //{
+        //    compteur = 0;
+        //    transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
+        //    transform.localScale = new Vector3(0.20f, 0.20f, 0.30f);
+        //}
 
         if (compteur == sat)
         {
