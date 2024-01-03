@@ -7,7 +7,7 @@ public class Blue_Leg : MonoBehaviour
 
 
 
-    public int limite = 0;
+    public float limite = 0;
     public int sat = 8;
     private int compteur = 0;
 
@@ -52,7 +52,7 @@ public class Blue_Leg : MonoBehaviour
     void ScaleOnY()
     {
         // Redimensionne le cube uniquement sur l'axe Y
-        if (transform.localScale.y < limite)
+        if (transform.localScale.x < limite)
         {
             transform.localScale = new Vector3(transform.localScale.x + speed * Time.deltaTime, transform.localScale.y,  transform.localScale.z);
         }
