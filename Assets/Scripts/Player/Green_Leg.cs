@@ -33,7 +33,7 @@ public class Green_Leg : MonoBehaviour
             //compteur += 1;
             //fmod_stretch();
         }
-        if (Input.GetKey(KeyCode.O))
+        if (Input.GetKey(KeyCode.R))
         {
             Reset();
         }

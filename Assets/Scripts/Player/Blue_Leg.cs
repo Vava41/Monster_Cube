@@ -36,7 +36,7 @@ public class Blue_Leg : MonoBehaviour
             fmod_stretch();
 
         }
-        if (Input.GetKey(KeyCode.O))
+        if (Input.GetKey(KeyCode.R))
         {
             Reset();
         }
