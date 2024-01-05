@@ -13482,9 +13482,6 @@ PrefabInstance:
       addedObject: {fileID: 1125301897}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1125301900}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1125301896}
   m_SourcePrefab: {fileID: 100100000, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
 --- !u!1001 &665469342
@@ -15162,7 +15159,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125301895}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d78cb2b49a1647745a4862c480299486, type: 3}
   m_Name: 
@@ -15230,28 +15227,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
   m_PrefabInstance: {fileID: 507204535}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1125301900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1125301895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa2f7dd791cb406479e9232ccbb06831, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  G1: {fileID: 0}
-  G2: {fileID: 0}
-  G3: {fileID: 0}
-  rb: {fileID: 1125301898}
-  speed: 12
-  speedJoystickH: 2
-  speedJoystickV: 2
-  rotationSpeed: 250
-  grounded: 1
-  playerCamera: {fileID: 338153965}
 --- !u!1 &1154073068 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d67395c94a5f1ba4ca631045c8489f06, type: 3}
