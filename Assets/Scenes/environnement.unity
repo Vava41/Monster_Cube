@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13482,6 +13482,9 @@ PrefabInstance:
       addedObject: {fileID: 1125301897}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1125301900}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1125301896}
   m_SourcePrefab: {fileID: 100100000, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
 --- !u!1001 &665469342
@@ -15159,7 +15162,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125301895}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d78cb2b49a1647745a4862c480299486, type: 3}
   m_Name: 
@@ -15227,6 +15230,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
   m_PrefabInstance: {fileID: 507204535}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1125301900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125301895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2f7dd791cb406479e9232ccbb06831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  G1: {fileID: 0}
+  G2: {fileID: 0}
+  G3: {fileID: 0}
+  rb: {fileID: 1125301898}
+  speed: 12
+  speedJoystickH: 2
+  speedJoystickV: 2
+  rotationSpeed: 250
+  grounded: 1
+  playerCamera: {fileID: 338153965}
 --- !u!1 &1154073068 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d67395c94a5f1ba4ca631045c8489f06, type: 3}
@@ -15313,11 +15338,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 82451520966002863, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016462865
+      value: 0.000000016462876
       objectReference: {fileID: 0}
     - target: {fileID: 82451520966002863, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000005003348
+      value: -0.000000005003351
       objectReference: {fileID: 0}
     - target: {fileID: 570224654733170359, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_Name
@@ -15381,15 +15406,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 725846098387904013, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.27337915
+      value: 0.27337918
       objectReference: {fileID: 0}
     - target: {fileID: 725846098387904013, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000028667046
+      value: 5.193735e-15
       objectReference: {fileID: 0}
     - target: {fileID: 725846098387904013, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000008147334
+      value: -9.712379e-16
       objectReference: {fileID: 0}
     - target: {fileID: 2749634573626666895, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_Follow
@@ -15409,11 +15434,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3088306995922421170, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1e-45
+      value: 3e-45
       objectReference: {fileID: 0}
     - target: {fileID: 3088306995922421170, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 5731506501892067625, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_IgnoreTag
