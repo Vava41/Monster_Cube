@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1c5b0eef5b636c147a2c8cb666efbcca, type: 2}
+  - {fileID: 2100000, guid: 886bc565b977665469c0a4f193b8c599, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,7 +100,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 188178420452169276}
   - component: {fileID: 2572337077621595004}
   m_Layer: 0
-  m_Name: button
+  m_Name: button 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,14 +147,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2331597360608624701}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.89, y: 1.52, z: 15.34}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -34.55, y: -4.65, z: 102.3}
   m_LocalScale: {x: 2.4384, y: 1.2192, z: 2.4384}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8696764793685508497}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!33 &6032046724381884906
 MeshFilter:
   m_ObjectHideFlags: 0
