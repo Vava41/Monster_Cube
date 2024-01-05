@@ -94,8 +94,11 @@ public class Blue_Leg : MonoBehaviour
         compteur = 0;
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
 
-            // Retour taille initiale
-            transform.localScale = new Vector3(1f, 21.9793f, 1f);
+        // Retour taille initiale
+        if (transform.localScale.x > 1f)
+        {
+            transform.localScale = new Vector3(transform.localScale.x - speed * Time.deltaTime, 1f, 1f);
+        }
     }
 
 }

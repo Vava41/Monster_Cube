@@ -9,6 +9,7 @@ TagManager:
   - GreenLimb
   - BlueLimb
   - RedLimb
+  - Hand
   layers:
   - Default
   - TransparentFX
