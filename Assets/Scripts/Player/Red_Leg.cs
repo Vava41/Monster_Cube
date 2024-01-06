@@ -49,9 +49,9 @@ public class Red_Leg : MonoBehaviour
     void ScaleOnX()
     {
         // Redimensionne le cube uniquement sur l'axe X
-        if (transform.localScale.x < limite)
+        if (transform.localScale.y < limite)
         {
-            transform.localScale = new Vector3(transform.localScale.x + speed * Time.deltaTime, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + speed * Time.deltaTime, transform.localScale.z);
         }
 
 
@@ -93,9 +93,9 @@ public class Red_Leg : MonoBehaviour
             transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
 
         // Retour taille initiale
-        if (transform.localScale.x > 1f)
+        if (transform.localScale.y > 0.02669102f)
         {
-            transform.localScale = new Vector3(transform.localScale.x - speed * Time.deltaTime, 21.9793f, 1.1418f);
+            transform.localScale = new Vector3(0.70301f, transform.localScale.y - speed * Time.deltaTime, 0.70301f);
         }
     }
 
