@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class porte : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Animator _animator;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+
+        if (other.CompareTag("Player"))
+        {
+            _animator.Play(stateName: "porte");
+        }
     }
 }
