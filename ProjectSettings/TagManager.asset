@@ -10,7 +10,8 @@ TagManager:
   - BlueLimb
   - RedLimb
   - Hand
-  - Object
+  - Undefined
+  - Grabbable
   layers:
   - Default
   - TransparentFX
