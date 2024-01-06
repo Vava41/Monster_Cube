@@ -10,7 +10,7 @@ public class forcefield : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
         RB= other.gameObject.GetComponent<Rigidbody>();
-        RB.AddForce(Vector3.up * force, ForceMode.Force);
+        RB.AddForce(-transform.forward * force, ForceMode.Force);
     }
 
     // Update is called once per frame

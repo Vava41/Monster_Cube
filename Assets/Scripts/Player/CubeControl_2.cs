@@ -7,13 +7,17 @@ public class CubeControl_2 : MonoBehaviour
     public Green_Leg G1;
     public Red_Leg G2;
     public Blue_Leg G3;
+
     public Rigidbody rb;
+
     public float speed = 3f;
     public float speedJoystickH = 3f;
     public float speedJoystickV = 3f;
     public float rotationSpeed = 10f;
+
     float _horizontalInput;
     float _verticalInput;
+
     public bool grounded = true;
     public Camera playerCamera;
 
@@ -21,6 +25,7 @@ public class CubeControl_2 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
         G1 = FindObjectOfType<Green_Leg>();
         G2 = FindObjectOfType<Red_Leg>();
         G3 = FindObjectOfType<Blue_Leg>();
@@ -30,6 +35,7 @@ public class CubeControl_2 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        // Caméra direction
         Vector3 cameraForward = Vector3.Scale(playerCamera.transform.forward, new Vector3(1, 0, 1)).normalized;
         Vector3 cameraRight = Vector3.Scale(playerCamera.transform.right, new Vector3(1, 0, 1)).normalized;
         Vector3 cameraLeft = Vector3.Scale(-playerCamera.transform.right, new Vector3(1, 0, 1)).normalized;
@@ -38,7 +44,7 @@ public class CubeControl_2 : MonoBehaviour
         {
             HandleInput();
 
-
+            // Clavier Forward
             Vector3 propulsionf = cameraForward;
 
             if (Input.GetKey(KeyCode.W))
@@ -46,7 +52,7 @@ public class CubeControl_2 : MonoBehaviour
                 rb.AddForce(propulsionf * speed);
             }
 
-
+            // Clavier Back
             Vector3 propulsionb = cameraBack;
 
             if (Input.GetKey(KeyCode.S))
@@ -54,7 +60,7 @@ public class CubeControl_2 : MonoBehaviour
                 rb.AddForce(propulsionb * speed);
             }
 
-
+            // Clavier Left
             Vector3 propulsionl = cameraLeft;
 
             if (Input.GetKey(KeyCode.A))
@@ -62,7 +68,7 @@ public class CubeControl_2 : MonoBehaviour
                 rb.AddForce(propulsionl * speed);
             }
 
-
+            // Clavier Right
             Vector3 propulsionr = cameraRight;
 
             if (Input.GetKey(KeyCode.D))
@@ -71,7 +77,7 @@ public class CubeControl_2 : MonoBehaviour
             }
 
 
-
+            // Rotation positive clic gauche
             if (Input.GetMouseButton(0)) //0 est le clic gauche
             {
                 // Applique une impulsion de rotation autour de l'axe Y
@@ -82,6 +88,7 @@ public class CubeControl_2 : MonoBehaviour
 
             }
 
+            // Rotation positive manette
             if (Input.GetAxis("L2") > 0)
             {
                 Vector3 torque = new Vector3(0, rotationSpeed, 0);
@@ -94,7 +101,7 @@ public class CubeControl_2 : MonoBehaviour
 
 
 
-
+            // Rotation negative clic gauche
             if (Input.GetMouseButton(1)) //1 est le clic droit
             {
                 // Applique une impulsion de rotation autour de l'axe Y
@@ -105,7 +112,7 @@ public class CubeControl_2 : MonoBehaviour
 
             }
 
-
+            // Rotation negative manette
             if (Input.GetAxis("R2") > 0)
             {
                 // Applique une impulsion de rotation autour de l'axe Y
@@ -126,18 +133,18 @@ public class CubeControl_2 : MonoBehaviour
 
         void HandleInput()
         {
-            // R�cup�rer les axes de d�placement de la manette
-            float horizontalInput = Input.GetAxis("Horizontal");
-            float verticalInput = Input.GetAxis("Vertical");
+            //// R�cup�rer les axes de d�placement de la manette
+            //float horizontalInput = Input.GetAxis("Horizontal");
+            //float verticalInput = Input.GetAxis("Vertical");
 
-            // D�finir la direction de la propulsion en fonction des axes
-            Vector3 propulsionDirection = (cameraForward * verticalInput) + (cameraRight * horizontalInput);
+            //// D�finir la direction de la propulsion en fonction des axes
+            //Vector3 propulsionDirection = (cameraForward * verticalInput) + (cameraRight * horizontalInput);
 
-            // Appliquer la force si la manette est utilis�e
-            if (propulsionDirection != Vector3.zero)
-            {
-                rb.AddForce(propulsionDirection.normalized * speed);
-            }
+            //// Appliquer la force si la manette est utilis�e
+            //if (propulsionDirection != Vector3.zero)
+            //{
+            //    rb.AddForce(propulsionDirection.normalized * speed);
+            //}
         }
 
 
