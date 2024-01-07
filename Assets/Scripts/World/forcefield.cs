@@ -10,7 +10,7 @@ public class forcefield : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Object"))
+        if (other.CompareTag("Grabbable"))
         {
             if (atire == false)
             {
