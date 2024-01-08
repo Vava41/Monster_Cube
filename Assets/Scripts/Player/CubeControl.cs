@@ -114,6 +114,16 @@ public class CubeControl : MonoBehaviour
 
                 transform.Rotate(torque * Time.deltaTime, Space.World);
             }
+
+
+
+            if (Input.GetKey(KeyCode.Joystick1Button5))
+            {
+                Debug.Log("fonctionne");
+            }
+
+
+
         }
         
 
