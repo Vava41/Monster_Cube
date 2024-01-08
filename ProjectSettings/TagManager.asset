@@ -12,6 +12,8 @@ TagManager:
   - Hand
   - Undefined
   - Grabbable
+  - Object
+  - Button
   layers:
   - Default
   - TransparentFX
