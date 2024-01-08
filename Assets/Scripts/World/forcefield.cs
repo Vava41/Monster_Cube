@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class forcefield : MonoBehaviour
 {
-    public float force = 10f;
+    public float force= 10f;
     private Rigidbody RB;
     public bool atire;
     public string _input;
@@ -13,7 +13,7 @@ public class forcefield : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.E))
         {
-            if (other.CompareTag("Object"))
+            if (other.CompareTag("Grabbable"))
             {
                 if (atire == false)
                 {

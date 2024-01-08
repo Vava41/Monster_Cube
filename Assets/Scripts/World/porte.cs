@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class porte : MonoBehaviour
 {
-    [SerializeField] private Animator _animator;
+    public Animator _animator;
 
     private void OnTriggerEnter(Collider other)
     {
 
         if (other.CompareTag("Player"))
         {
-            _animator.Play(stateName: "porte");
+            _animator.SetBool("IsOpen", true);
         }
     }
 }

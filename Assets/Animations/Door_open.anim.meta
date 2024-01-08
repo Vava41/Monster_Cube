@@ -1,21 +1,12 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-<<<<<<<< HEAD:Assets/Animations/FuturisticDoor.controller.meta
-guid: 1a4087b642d7ec643865127f9b3ce1cd
-=======
 <<<<<<<< HEAD:Assets/Animations/Door_open.anim.meta
 guid: e141209c8e9e98c4aa782b1ee5d6e8f7
->>>>>>> fab3d988155960b83d451d1736cf96ae946a1843
 ========
 guid: 46da2fb875942a84e95809f3e5e8123b
 >>>>>>>> fab3d988155960b83d451d1736cf96ae946a1843:Assets/Animations/Door_Animation.controller.meta
 NativeFormatImporter:
   externalObjects: {}
-<<<<<<< HEAD
-  mainObjectFileID: 9100000
-=======
   mainObjectFileID: 7400000
->>>>>>> fab3d988155960b83d451d1736cf96ae946a1843
   userData: 
   assetBundleName: 
   assetBundleVariant: 
