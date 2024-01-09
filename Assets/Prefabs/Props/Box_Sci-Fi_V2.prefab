@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7134bf48f24845d49ae43a46020ea883, type: 3}
       propertyPath: m_Name
-      value: Box_Sci-Fi
+      value: Box_Sci-Fi_V2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7134bf48f24845d49ae43a46020ea883, type: 3}
       propertyPath: m_TagString
@@ -78,6 +78,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7134bf48f24845d49ae43a46020ea883, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9014398672032819177}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7134bf48f24845d49ae43a46020ea883, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1544758486799053856}
   m_SourcePrefab: {fileID: 100100000, guid: 7134bf48f24845d49ae43a46020ea883, type: 3}
 --- !u!1 &2741576095962921894 stripped
 GameObject:
@@ -132,3 +135,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0115395, y: 2.0115387, z: 2.0115385}
   m_Center: {x: 18.896544, y: 0, z: -7.1313396}
+--- !u!114 &1544758486799053856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2741576095962921894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: event:/box
+  Event: 
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1

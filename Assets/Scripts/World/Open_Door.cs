@@ -5,9 +5,7 @@ using UnityEngine;
 public class Open_Door : MonoBehaviour
 {
     public Animation doorOpening;
-    
-
-
+    public string fmodEventPath = "event:/FolderName/YourEventPath";
     public string nomAnimation = "Door";
 
  
@@ -17,6 +15,7 @@ public class Open_Door : MonoBehaviour
     {
         doorOpening = GetComponent<Animation>();
         doorOpening.Play();
+        FMODUnity.RuntimeManager.PlayOneShot(fmodEventPath, transform.position);
     }
 }
 

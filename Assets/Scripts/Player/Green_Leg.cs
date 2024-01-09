@@ -27,7 +27,7 @@ public class Green_Leg : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.Joystick1Button0)) // Utilise le bon index de bouton en fonction de ta manette
+            if (Input.GetKey(KeyCode.Joystick1Button0)) // Utilise le bon index de bouton en fonction de ta manette
         {
             // Redimensionne le cube sur l'axe Y
             ScaleOnY();
@@ -52,10 +52,12 @@ public class Green_Leg : MonoBehaviour
         if (transform.localScale.y < limite)
         {
             transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + speed * Time.deltaTime, transform.localScale.z);
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_stretch");
         }
-
-
-
+        if (transform.localScale.y == limite)
+        {
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limit");
+        }
         ////Limite
         //if (compteur == limite)
         //{
@@ -74,7 +76,7 @@ public class Green_Leg : MonoBehaviour
     }
     void fmod_stretch()
     {
-        //FMODUnity.RuntimeManager.PlayOneShot("event:/etirement");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_stretch_beg");
     }
     private void OnCollisionExit(Collision collision)
     {

@@ -1,5 +1,315 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9041306847409974709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638404240796047864
+  FileSizes:
+  - Name: Desktop
+    Value: 1436
+  Exists: 1
+--- !u!114 &-7400699019555518847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/World/other/button
+  m_EditorClassIdentifier: 
+  Path: event:/World/other/button
+  Guid:
+    Data1: -904190479
+    Data2: 1153315384
+    Data3: 962399889
+    Data4: 1256922371
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
+--- !u!114 &-7382456069923329011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player/powers/blower
+  m_EditorClassIdentifier: 
+  Path: event:/player/powers/blower
+  Guid:
+    Data1: 549434769
+    Data2: 1120644411
+    Data3: -1272347231
+    Data4: 1883790646
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 440
+--- !u!114 &-6430461883224055922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/World/other/conveyor_belt
+  m_EditorClassIdentifier: 
+  Path: event:/World/other/conveyor_belt
+  Guid:
+    Data1: 1741476873
+    Data2: 1148185688
+    Data3: -704221005
+    Data4: -1869477286
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1284
+--- !u!114 &-5173783036773791271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player/impacts/player_moving
+  m_EditorClassIdentifier: 
+  Path: event:/player/impacts/player_moving
+  Guid:
+    Data1: -1080594774
+    Data2: 1237178730
+    Data3: -846980721
+    Data4: -907986301
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 315
+--- !u!114 &-3702034857024486648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/World/ambience/ambience
+  m_EditorClassIdentifier: 
+  Path: event:/World/ambience/ambience
+  Guid:
+    Data1: 1411176853
+    Data2: 1319250696
+    Data3: -81777000
+    Data4: -716381332
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-1187666727012193173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/World/other/door
+  m_EditorClassIdentifier: 
+  Path: event:/World/other/door
+  Guid:
+    Data1: -1821847370
+    Data2: 1267904077
+    Data3: 206309511
+    Data4: 1258839596
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2377
+--- !u!114 &-961627483871496359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/World/props/box_impact
+  m_EditorClassIdentifier: 
+  Path: event:/World/props/box_impact
+  Guid:
+    Data1: 946915499
+    Data2: 1194723000
+    Data3: 1584410274
+    Data4: 905671186
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 374
+--- !u!114 &-861261015060689492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player/limb/limb_retract
+  m_EditorClassIdentifier: 
+  Path: event:/player/limb/limb_retract
+  Guid:
+    Data1: 710060247
+    Data2: 1084547439
+    Data3: -856006731
+    Data4: 231374388
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 560
+--- !u!114 &-566591683226107871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player/powers/vaccum
+  m_EditorClassIdentifier: 
+  Path: event:/player/powers/vaccum
+  Guid:
+    Data1: 1903914659
+    Data2: 1338328197
+    Data3: 1708512409
+    Data4: -1709182371
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 430
+--- !u!114 &-351644035651419452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player/limb/limb_stretch
+  m_EditorClassIdentifier: 
+  Path: event:/player/limb/limb_stretch
+  Guid:
+    Data1: -1968365593
+    Data2: 1117917118
+    Data3: 529793195
+    Data4: -1991750572
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1163
+--- !u!114 &-129996541013960187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638404240795984541
+  FileSizes:
+  - Name: Desktop
+    Value: 517952
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +322,136 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: -9041306847409974709}
+  - {fileID: -129996541013960187}
+  EditorEvents:
+  - {fileID: -6430461883224055922}
+  - {fileID: 2458654333380728681}
+  - {fileID: 2330154140280809315}
+  - {fileID: 5221018152008357226}
+  - {fileID: 4723405679902557459}
+  - {fileID: -3702034857024486648}
+  - {fileID: -566591683226107871}
+  - {fileID: -7382456069923329011}
+  - {fileID: -1187666727012193173}
+  - {fileID: -861261015060689492}
+  - {fileID: -351644035651419452}
+  - {fileID: -7400699019555518847}
+  - {fileID: -5173783036773791271}
+  - {fileID: -961627483871496359}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  MasterBanks:
+  - {fileID: -129996541013960187}
+  StringsBanks:
+  - {fileID: -9041306847409974709}
+  cacheTime: 638404240796047864
   cacheVersion: 131609
+--- !u!114 &2330154140280809315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player/limb/rotation
+  m_EditorClassIdentifier: 
+  Path: event:/player/limb/rotation
+  Guid:
+    Data1: -1228432104
+    Data2: 1158123550
+    Data3: 1763497894
+    Data4: 606137599
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 540
+--- !u!114 &2458654333380728681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player/limb/limit
+  m_EditorClassIdentifier: 
+  Path: event:/player/limb/limit
+  Guid:
+    Data1: 2056405778
+    Data2: 1218437822
+    Data3: -1121680714
+    Data4: 615609971
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 515
+--- !u!114 &4723405679902557459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player/limb/limb_stretch_beg
+  m_EditorClassIdentifier: 
+  Path: event:/player/limb/limb_stretch_beg
+  Guid:
+    Data1: -730044853
+    Data2: 1294107887
+    Data3: 1400458149
+    Data4: -1712348376
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 440
+--- !u!114 &5221018152008357226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/World/props/glass_break
+  m_EditorClassIdentifier: 
+  Path: event:/World/props/glass_break
+  Guid:
+    Data1: -505894359
+    Data2: 1105869690
+    Data3: 323912595
+    Data4: -1720217125
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1905
