@@ -16,6 +16,7 @@ public class CubeControl : MonoBehaviour
     float _verticalInput;
     public bool grounded = true;
     public Camera playerCamera;
+    FMOD.Studio.EventInstance Rotation;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class CubeControl : MonoBehaviour
         G2 = FindObjectOfType<Red_Leg>();
         G3 = FindObjectOfType<Blue_Leg>();
         grounded = true;
+        Rotation= FMODUnity.RuntimeManager.CreateInstance("event:/player/limb/rotation");
     }
 
     // Update is called once per frame
@@ -122,8 +124,14 @@ public class CubeControl : MonoBehaviour
                 Debug.Log("fonctionne");
             }
 
-
-
+            if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) //|| Input.GetKeyDown(KeyCode.R2) || Input.GetKeyDown(KeyCode.L2))
+            {
+                Rotation.start();
+            }
+            if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(1)) //|| Input.GetKeyUp(KeyCode.R2) || Input.GetKeyUp(KeyCode.L2))
+            {
+                Rotation.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            }
         }
         
 

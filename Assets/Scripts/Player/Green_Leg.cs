@@ -23,7 +23,6 @@ public class Green_Leg : MonoBehaviour
             // Redimensionne le cube sur l'axe Y
             ScaleOnY();
             //compteur += 1;
-            //fmod_stretch();
         }
 
 
@@ -32,8 +31,17 @@ public class Green_Leg : MonoBehaviour
             // Redimensionne le cube sur l'axe Y
             ScaleOnY();
             //compteur += 1;
-            //fmod_stretch();
         }
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button1))
+        {
+            fmod_stretch();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_retract");
+        }
+
         if (Input.GetKey(KeyCode.R))
         {
             Reset();
@@ -76,7 +84,14 @@ public class Green_Leg : MonoBehaviour
     }
     void fmod_stretch()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_stretch_beg");
+        if (transform.localScale.y < limite)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_stretch_beg");
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limit");
+        }
     }
     private void OnCollisionExit(Collision collision)
     {
