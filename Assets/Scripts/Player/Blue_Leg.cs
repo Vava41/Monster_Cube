@@ -29,7 +29,7 @@ public class Blue_Leg : MonoBehaviour
 
 
         // Controller
-        if (Input.GetKey(KeyCode.Joystick1Button2)) 
+        if (Input.GetKey(KeyCode.Joystick1Button0)) 
         {
             // Redimensionne le cube sur l'axe Y
             ScaleOnY();

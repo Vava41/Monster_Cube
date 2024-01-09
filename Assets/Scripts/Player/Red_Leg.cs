@@ -28,7 +28,7 @@ public class Red_Leg : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.Joystick1Button1))
+        if (Input.GetKey(KeyCode.Joystick1Button2))
         {
             // Redimensionne le cube sur l'axe X
             ScaleOnY();
