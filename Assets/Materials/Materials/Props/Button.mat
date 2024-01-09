@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Vaccum
+  m_Name: Button
   m_Shader: {fileID: 47, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -28,7 +28,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: be6c9254845424e41a7a562c6cb88481, type: 3}
+        m_Texture: {fileID: 2800000, guid: dae9b89f3cdb04b4883d214d5c90ebb1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -48,11 +48,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a661d39eccf16ad46aad8b7eb5e52b13, type: 3}
+        m_Texture: {fileID: 2800000, guid: 80e631a219563c94a8ef35a6e90f5124, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 0a8d25753df2705408358df023dbf41e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 399474abee93a87458fecccd792319a3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -60,11 +60,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: cf44ae5f22805d84fb6ed13cde101937, type: 3}
+        m_Texture: {fileID: 2800000, guid: f662e2d4c29ed874dabc7827a87918df, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
-        m_Texture: {fileID: 2800000, guid: 987d864aac5ece048a47cb54f2123e76, type: 3}
+        m_Texture: {fileID: 2800000, guid: 46f0be765399a3c47a10b86ddd50fb3e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
