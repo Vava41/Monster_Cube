@@ -13,7 +13,7 @@ public class forcefield : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.E))
         {
-            if (other.CompareTag("Grabbable"))
+            if (other.CompareTag("Object"))
             {
                 if (atire == false)
                 {
@@ -27,5 +27,24 @@ public class forcefield : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKey(KeyCode.Joystick1Button2) || Input.GetKey(KeyCode.Joystick1Button1))
+        {
+            if (other.CompareTag("Object"))
+            {
+                if (atire == false)
+                {
+                    RB = other.gameObject.GetComponent<Rigidbody>();
+                    RB.AddForce(transform.up * force, ForceMode.Force);
+                }
+                else
+                {
+                    RB = other.gameObject.GetComponent<Rigidbody>();
+                    RB.AddForce(-transform.up * force, ForceMode.Force);
+                }
+            }
+        }
+
+
     }
 }
