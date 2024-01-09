@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3b5a7190-5bec-441a-a7cc-5fb1b2b474c0}">
+		<property name="assetPath">
+			<value>Button Sound Effects (Copyright Free).mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>53.263673469387754</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c9be9f5c-9b48-482e-8bbe-51589d390db5}</destination>
+		</relationship>
+	</object>
+</objects>
