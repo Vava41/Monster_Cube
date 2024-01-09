@@ -14,8 +14,13 @@ public class Blue_Leg : MonoBehaviour
 
     [SerializeField] public bool G3;
     public Transform _parent;
+    FMOD.Studio.EventInstance Extrude;
 
 
+    private void Start()
+    {
+        Extrude = FMODUnity.RuntimeManager.CreateInstance("event:/player/limb/limb_stretch");
+    }
     void Update()
     {
         // Mouse
@@ -24,26 +29,39 @@ public class Blue_Leg : MonoBehaviour
             // Redimensionne le cube sur l'axe Y
             ScaleOnY();
             //compteur += 1;
-            fmod_stretch();
+            //fmod_stretch();
         }
 
 
         // Controller
-        if (Input.GetKey(KeyCode.Joystick1Button0)) 
+        if (Input.GetKey(KeyCode.Joystick1Button0))
         {
             // Redimensionne le cube sur l'axe Y
             ScaleOnY();
             //compteur += 1;
-            fmod_stretch();
+            //fmod_stretch();
 
         }
+
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Joystick1Button0))
+        {
+            fmod_stretch();
+        }
+        
+        if (Input.GetKeyUp(KeyCode.Q) || Input.GetKeyUp(KeyCode.Joystick1Button0))
+        {
+            Extrude.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_retract");
+        }
+
         if (Input.GetKey(KeyCode.R))
         {
             Reset();
         }
-
-
-
         if (Input.GetKey(KeyCode.Joystick1Button3))
         {
             Reset();
@@ -55,7 +73,7 @@ public class Blue_Leg : MonoBehaviour
         // Redimensionne le cube uniquement sur l'axe Y
         if (transform.localScale.y < limite)
         {
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + speed * Time.deltaTime,  transform.localScale.z);
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + speed * Time.deltaTime, transform.localScale.z);
         }
 
 
@@ -78,7 +96,15 @@ public class Blue_Leg : MonoBehaviour
     }
     void fmod_stretch()
     {
-        //FMODUnity.RuntimeManager.PlayOneShot("event:/etirement");
+        if (transform.localScale.y < limite)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_stretch_beg");
+            Extrude.start();
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limit");
+        }
     }
     private void OnCollisionExit(Collision collision)
     {
@@ -93,7 +119,7 @@ public class Blue_Leg : MonoBehaviour
     void Reset()
     {
         compteur = 0;
-            transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
+        transform.position = new Vector3(_parent.position.x, _parent.position.y, _parent.position.z);
 
         // Retour taille initiale
         if (transform.localScale.y > 0.09712829f)

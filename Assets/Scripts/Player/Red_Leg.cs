@@ -14,7 +14,13 @@ public class Red_Leg : MonoBehaviour
 
     [SerializeField] public bool G2;
     public Transform _parent;
+    FMOD.Studio.EventInstance Extrude;
 
+
+    private void Start()
+    {
+        Extrude = FMODUnity.RuntimeManager.CreateInstance("event:/player/limb/limb_stretch");
+    }
 
     void Update()
     {
@@ -35,6 +41,22 @@ public class Red_Leg : MonoBehaviour
             //compteur += 1;
             //fmod_stretch();
         }
+
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button2))
+        {
+            fmod_stretch();
+        }
+
+        if (Input.GetKeyUp(KeyCode.E) || Input.GetKeyUp(KeyCode.Joystick1Button2))
+        {
+            Extrude.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_retract");
+        }
+
         if (Input.GetKey(KeyCode.R))
         {
             Reset();
@@ -76,7 +98,15 @@ public class Red_Leg : MonoBehaviour
     }
     void fmod_stretch()
     {
-        //FMODUnity.RuntimeManager.PlayOneShot("event:/etirement");
+        if (transform.localScale.y < limite)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_stretch_beg");
+            Extrude.start();
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limit");
+        }
     }
     private void OnCollisionExit(Collision collision)
     {

@@ -170,7 +170,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d2864f5057ad19141b78ada4cf0b0781, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7164738752900438063}
+      addedObject: {fileID: 1124836261642128549}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d2864f5057ad19141b78ada4cf0b0781, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6598307166923398661}
@@ -185,7 +185,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d2864f5057ad19141b78ada4cf0b0781, type: 3}
   m_PrefabInstance: {fileID: 127445208188085804}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7164738752900438063
+--- !u!114 &1124836261642128549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,12 +194,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 938348976815299453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a974e262ae37bd642aa8095ced3f45ad, type: 3}
+  m_Script: {fileID: 11500000, guid: d0295ad190268b74e9453b378cc55964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 20
-  atire: 1
-  _input: 
+  force: 10
 --- !u!65 &6598307166923398661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -777,7 +775,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d2864f5057ad19141b78ada4cf0b0781, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7424855091060275548}
+      addedObject: {fileID: 8228381012068683758}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d2864f5057ad19141b78ada4cf0b0781, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4223110174115721259}
@@ -792,7 +790,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d2864f5057ad19141b78ada4cf0b0781, type: 3}
   m_PrefabInstance: {fileID: 3718539983851758410}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7424855091060275548
+--- !u!114 &8228381012068683758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -801,12 +799,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4565385274554523163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a974e262ae37bd642aa8095ced3f45ad, type: 3}
+  m_Script: {fileID: 11500000, guid: d0295ad190268b74e9453b378cc55964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 20
-  atire: 1
-  _input: 
+  force: 50
 --- !u!65 &4223110174115721259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -878,7 +874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: PlayerV2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2752c5b74d18ac848a13c2d1d4c94bf5, type: 3}
       propertyPath: m_TagString
@@ -1102,8 +1098,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 80
-  atire: 0
-  _input: 
 --- !u!1001 &6488833654674872942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1214,8 +1208,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 80
-  atire: 0
-  _input: 
 --- !u!4 &6739160380695887237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b93a2a6e6811065489280e89ae97f5c3, type: 3}
