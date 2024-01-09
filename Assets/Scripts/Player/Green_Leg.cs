@@ -27,11 +27,7 @@ public class Green_Leg : MonoBehaviour
         }
 
 
-<<<<<<< HEAD
         if (Input.GetKey(KeyCode.Joystick1Button1)) // Utilise le bon index de bouton en fonction de ta manette
-=======
-            if (Input.GetKey(KeyCode.Joystick1Button0)) // Utilise le bon index de bouton en fonction de ta manette
->>>>>>> 695f0daa9d5543e3fb66640d31140832e144793a
         {
             // Redimensionne le cube sur l'axe Y
             ScaleOnY();
