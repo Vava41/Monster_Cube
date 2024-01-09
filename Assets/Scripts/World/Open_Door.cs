@@ -17,6 +17,7 @@ public class Open_Door : MonoBehaviour
     {
         doorOpening = GetComponent<Animation>();
         doorOpening.Play();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/World/other/door");
     }
 }
 

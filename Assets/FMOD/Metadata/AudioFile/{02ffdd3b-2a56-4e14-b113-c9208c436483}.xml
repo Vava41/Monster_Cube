@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{02ffdd3b-2a56-4e14-b113-c9208c436483}">
+		<property name="assetPath">
+			<value>AmbientLab.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.744081632653061</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c9be9f5c-9b48-482e-8bbe-51589d390db5}</destination>
+		</relationship>
+	</object>
+</objects>

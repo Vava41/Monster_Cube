@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d6053ef7-30a5-4b8a-8d47-b1759816d571}">
+		<property name="assetPath">
+			<value>évènement ambience 10.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.3061224489795917</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c9be9f5c-9b48-482e-8bbe-51589d390db5}</destination>
+		</relationship>
+	</object>
+</objects>
