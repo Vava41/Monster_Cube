@@ -14,7 +14,12 @@ public class Green_Leg : MonoBehaviour
 
     [SerializeField] public bool G1;
     public Transform _parent;
+    FMOD.Studio.EventInstance Extrude;
 
+    private void Start()
+    {
+        Extrude = FMODUnity.RuntimeManager.CreateInstance("event:/player/limb/limb_stretch");
+    }
     void Update()
     {
         // V�rifie si la barre d'espace est enfonc�e
@@ -35,6 +40,11 @@ public class Green_Leg : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Joystick1Button1))
         {
             fmod_stretch();
+        }
+        
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.Joystick1Button1))
+        {
+            Extrude.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -87,6 +97,7 @@ public class Green_Leg : MonoBehaviour
         if (transform.localScale.y < limite)
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/player/limb/limb_stretch_beg");
+            Extrude.start();
         }
         else
         {

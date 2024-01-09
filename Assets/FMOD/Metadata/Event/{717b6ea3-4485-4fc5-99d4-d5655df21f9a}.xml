@@ -8,7 +8,7 @@
 			<value>vaccum</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{4f5cda7a-8b80-4a0f-bb24-834e5f02f435}</destination>
@@ -174,7 +174,6 @@
 	<object class="MixerBusEffectChain" id="{eb1f4f3a-0648-4b9d-93de-62e167a415e7}">
 		<relationship name="effects">
 			<destination>{5311329c-4465-4e59-8999-fc2ee24aedd9}</destination>
-			<destination>{33b4da89-33fa-482a-b8a8-200eb4b3f61f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{83ac5fde-ec8a-4537-a843-021994b88015}" />
@@ -219,7 +218,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{5311329c-4465-4e59-8999-fc2ee24aedd9}" />
-	<object class="SpatialiserEffect" id="{33b4da89-33fa-482a-b8a8-200eb4b3f61f}" />
 	<object class="AutomationPoint" id="{93cdc7ec-63d9-4c09-86f4-f4b0ba462e57}">
 		<property name="position">
 			<value>0</value>

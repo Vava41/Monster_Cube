@@ -8,7 +8,7 @@
 			<value>limb_stretch_beg</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{57962fa6-a8bb-4dbf-afb0-afd167fa9f92}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{d09559f2-f928-40b1-bd2d-c9f53504dd04}">
 		<relationship name="effects">
 			<destination>{466911cc-afc9-451e-8d9b-4005ba8c1c6b}</destination>
-			<destination>{00ffe77a-7da8-4a65-9f4a-b4fcc6bf7fb7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{38b54e1c-a9a2-407d-aea9-8dc90f988080}" />
@@ -128,6 +127,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{370af0ba-5056-4642-88e6-bccb68581bc6}" />
 	<object class="MixerBusFader" id="{466911cc-afc9-451e-8d9b-4005ba8c1c6b}" />
-	<object class="SpatialiserEffect" id="{00ffe77a-7da8-4a65-9f4a-b4fcc6bf7fb7}" />
 	<object class="MixerBusFader" id="{fdaa59ef-4618-471e-a8d6-4c26ee6def93}" />
 </objects>

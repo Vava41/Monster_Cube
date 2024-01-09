@@ -8,7 +8,7 @@
 			<value>blower</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{4f5cda7a-8b80-4a0f-bb24-834e5f02f435}</destination>
@@ -177,7 +177,6 @@
 	<object class="MixerBusEffectChain" id="{7b92c2f7-2f96-4c0b-ad2c-6d2ba3b11124}">
 		<relationship name="effects">
 			<destination>{6cfcd32e-f2db-4361-b61f-f34290d83310}</destination>
-			<destination>{c38616c0-d728-4801-8c48-1528c9fea9ab}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4ac12347-9e1e-4ba4-a62a-38c97f6e0337}" />
@@ -222,7 +221,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{6cfcd32e-f2db-4361-b61f-f34290d83310}" />
-	<object class="SpatialiserEffect" id="{c38616c0-d728-4801-8c48-1528c9fea9ab}" />
 	<object class="AutomationPoint" id="{3446b49b-1bca-43f8-bcea-6437b0ee7d97}">
 		<property name="position">
 			<value>0</value>

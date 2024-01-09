@@ -32,6 +32,10 @@ public class vaccum : MonoBehaviour
                 RB.AddForce(-transform.up * force, ForceMode.Force);
             }
         }
+
+    }
+    private void Update()
+    {
         if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button3))
         {
             vac.start();
@@ -40,6 +44,5 @@ public class vaccum : MonoBehaviour
         {
             vac.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         }
-
     }
 }

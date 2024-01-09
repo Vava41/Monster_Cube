@@ -3025,6 +3025,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1622019324929738193, guid: df81d8e15f775b74d85502699bd41ba2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1625498151}
+    - targetCorrespondingSourceObject: {fileID: 1622019324929738193, guid: df81d8e15f775b74d85502699bd41ba2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625498154}
   m_SourcePrefab: {fileID: 100100000, guid: df81d8e15f775b74d85502699bd41ba2, type: 3}
 --- !u!1 &509843543
 GameObject:
@@ -5069,6 +5072,19 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1125301907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94239244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &1144616543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3468423551431590476, guid: aff8bf849eb61cc4d804176844fbff1b, type: 3}
@@ -21879,6 +21895,19 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1625498154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625498148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1001 &1656438869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25413,6 +25442,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4029748450852831101, guid: 81dc70e7d0b4b5c4b8eddbc372c6096f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1125301903}
+    - targetCorrespondingSourceObject: {fileID: 4029748450852831101, guid: 81dc70e7d0b4b5c4b8eddbc372c6096f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1125301907}
   m_SourcePrefab: {fileID: 100100000, guid: 81dc70e7d0b4b5c4b8eddbc372c6096f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

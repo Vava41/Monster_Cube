@@ -8,7 +8,7 @@
 			<value>limb_retract</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{57962fa6-a8bb-4dbf-afb0-afd167fa9f92}</destination>
@@ -119,7 +119,6 @@
 	<object class="MixerBusEffectChain" id="{296f0e0f-80a2-43f5-9450-5d7ec96c376d}">
 		<relationship name="effects">
 			<destination>{b99239bc-fc91-4dd8-9aac-6e1931789983}</destination>
-			<destination>{8cbfbd28-c24b-48f8-8170-34713eb7178c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3e6d10ea-296b-4dc6-8195-d4d0fecd1595}" />
@@ -131,6 +130,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{6cc613ec-de74-461c-8ff6-2539d6174892}" />
 	<object class="MixerBusFader" id="{b99239bc-fc91-4dd8-9aac-6e1931789983}" />
-	<object class="SpatialiserEffect" id="{8cbfbd28-c24b-48f8-8170-34713eb7178c}" />
 	<object class="MixerBusFader" id="{ab44d05a-cab8-4265-872f-d3f912326e48}" />
 </objects>
