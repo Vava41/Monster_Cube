@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638404181962225616
+  lastModified: 638404240796047864
   FileSizes:
   - Name: Desktop
-    Value: 1428
+    Value: 1436
   Exists: 1
 --- !u!114 &-7400699019555518847
 MonoBehaviour:
@@ -182,6 +182,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2377
+--- !u!114 &-961627483871496359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/World/props/box_impact
+  m_EditorClassIdentifier: 
+  Path: event:/World/props/box_impact
+  Guid:
+    Data1: 946915499
+    Data2: 1194723000
+    Data3: 1584410274
+    Data4: 905671186
+  Banks:
+  - {fileID: -129996541013960187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 374
 --- !u!114 &-861261015060689492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +305,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638404181962215619
+  lastModified: 638404240795984541
   FileSizes:
   - Name: Desktop
     Value: 517952
@@ -304,7 +331,6 @@ MonoBehaviour:
   - {fileID: 2330154140280809315}
   - {fileID: 5221018152008357226}
   - {fileID: 4723405679902557459}
-  - {fileID: 1263091286150899148}
   - {fileID: -3702034857024486648}
   - {fileID: -566591683226107871}
   - {fileID: -7382456069923329011}
@@ -313,40 +339,14 @@ MonoBehaviour:
   - {fileID: -351644035651419452}
   - {fileID: -7400699019555518847}
   - {fileID: -5173783036773791271}
+  - {fileID: -961627483871496359}
   EditorParameters: []
   MasterBanks:
   - {fileID: -129996541013960187}
   StringsBanks:
   - {fileID: -9041306847409974709}
-  cacheTime: 638404181962225616
+  cacheTime: 638404240796047864
   cacheVersion: 131609
---- !u!114 &1263091286150899148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/World/props/box
-  m_EditorClassIdentifier: 
-  Path: event:/World/props/box
-  Guid:
-    Data1: 1651861378
-    Data2: 1106302491
-    Data3: 1372094598
-    Data4: 1251888925
-  Banks:
-  - {fileID: -129996541013960187}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 374
 --- !u!114 &2330154140280809315
 MonoBehaviour:
   m_ObjectHideFlags: 0
