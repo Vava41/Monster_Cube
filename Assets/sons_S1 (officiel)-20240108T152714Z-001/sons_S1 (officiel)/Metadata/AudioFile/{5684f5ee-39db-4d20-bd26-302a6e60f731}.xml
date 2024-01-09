@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{3f568a08-c8f4-4076-b88d-251f83af8b60}">
+	<object class="AudioFile" id="{5684f5ee-39db-4d20-bd26-302a6e60f731}">
 		<property name="assetPath">
-			<value>Science Lab  SciFi Ambience  2 hours.mp3</value>
-		</property>
-		<property name="isStreaming">
-			<value>true</value>
+			<value>blocage membre 2.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>44.0999985</value>
+			<value>48</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>7199.5820408163263</value>
+			<value>0.26400000000000001</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{c9be9f5c-9b48-482e-8bbe-51589d390db5}</destination>
