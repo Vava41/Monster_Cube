@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db68a3ee932b454c85cbc447ae92051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Door_Opening: {fileID: 0}
   Door: {fileID: 567764367}
   doorIsOpening: 0
 --- !u!65 &145231091
@@ -4451,11 +4452,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 82451520966002863, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000016462865
+      value: -0.000000016462876
       objectReference: {fileID: 0}
     - target: {fileID: 82451520966002863, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000005003348
+      value: 0.000000005003351
       objectReference: {fileID: 0}
     - target: {fileID: 570224654733170359, guid: f9130491f82337342a049d2419db6a2e, type: 3}
       propertyPath: m_Name
